@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CountryFact</string>
+    <string name="country_details">Country Details</string>
+    <string name="country_id">COUNTRY_ID</string>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameTextView"
+            tools:text="Ghana"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="52dp" app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+            android:text="Population"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            app:layout_constraintStart_toStartOf="@+id/nameTextView" android:layout_marginTop="49dp"
+            app:layout_constraintTop_toBottomOf="@+id/nameTextView"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/populationTextView"
+            app:layout_constraintStart_toStartOf="@+id/textView2" android:layout_marginTop="19dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"/>
+    <TextView
+            android:text="Largest city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            app:layout_constraintStart_toStartOf="@+id/populationTextView" android:layout_marginTop="36dp"
+            app:layout_constraintTop_toBottomOf="@+id/populationTextView"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/largestCityTextView"
+            app:layout_constraintStart_toStartOf="@+id/textView5" android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"/>
+    <TextView
+            android:text="Capital city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            app:layout_constraintStart_toStartOf="@+id/largestCityTextView" android:layout_marginTop="45dp"
+            app:layout_constraintTop_toBottomOf="@+id/largestCityTextView"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/capitalCityTextView"
+            app:layout_constraintStart_toStartOf="@+id/textView7" android:layout_marginTop="26dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView7"/>
+    <TextView
+            android:text="Major language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+            app:layout_constraintStart_toStartOf="@+id/capitalCityTextView" android:layout_marginTop="42dp"
+            app:layout_constraintTop_toBottomOf="@+id/capitalCityTextView"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/majorLangTextView"
+            app:layout_constraintStart_toStartOf="@+id/textView9" android:layout_marginTop="19dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"/>
+    <TextView
+            android:text="Major religion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            app:layout_constraintStart_toStartOf="@+id/textView13" android:layout_marginTop="42dp"
+            app:layout_constraintTop_toBottomOf="@+id/majorLangTextView"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/majorReligionTextView"
+            app:layout_constraintStart_toStartOf="@+id/textView11" android:layout_marginTop="23dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"/>
+    <TextView
+            android:text="Monetary unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView13"
+            app:layout_constraintStart_toStartOf="@+id/monetaryUnitTextView" android:layout_marginBottom="9dp"
+            app:layout_constraintBottom_toTopOf="@+id/monetaryUnitTextView"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/monetaryUnitTextView"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="73dp" app:layout_constraintEnd_toEndOf="parent"/>
+</android.support.constraint.ConstraintLayout>
