@@ -36,4 +36,10 @@ dependencies {
     // Constraint Layout
     def constraintLayoutVersion = "1.1.3"
     implementation "com.android.support.constraint:constraint-layout:$constraintLayoutVersion"
+
+    // Navigation Components
+    def navigationVersion = "1.0.0-rc02"
+    implementation "android.arch.navigation:navigation-fragment-ktx:$navigationVersion"
+    implementation "android.arch.navigation:navigation-ui-ktx:$navigationVersion"
+    implementation 'android.arch.navigation:navigation-fragment:1.0.0'
 }

@@ -1,14 +1,13 @@
 package com.myricseptember.countryfact.ui.list
 
-import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import com.myricseptember.countryfact.CountryFactApp
 import com.myricseptember.countryfact.data.model.Country
-import com.myricseptember.countryfact.ui.details.CountryDetailsActivity
 import com.myricseptember.countryfact_start_project.R
 import kotlinx.android.synthetic.main.fragment_country_list.*
 
@@ -41,8 +40,12 @@ class CountryListFragment : Fragment(),
     }
 
     override fun onItemClick(country: Country, itemView: View) {
-        val detailsIntent = Intent(context, CountryDetailsActivity::class.java)
-        detailsIntent.putExtra(getString(R.string.country_id), country.id)
-        startActivity(detailsIntent)
+        val countryFactBundle = Bundle().apply {
+            putInt(getString(R.string.country_id), country.id)
+        }
+
+        view?.findNavController()?.navigate(
+            R.id.action_countryListFragment_to_countryDetailsFragment, countryFactBundle
+        )
     }
 }

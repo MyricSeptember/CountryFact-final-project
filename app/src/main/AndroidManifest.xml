@@ -17,10 +17,6 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity
-                android:name="com.myricseptember.countryfact.ui.details.CountryDetailsActivity"
-                android:label="@string/country_details"
-                android:parentActivityName="com.myricseptember.countryfact.ui.MainActivity" />
     </application>
 
 </manifest>

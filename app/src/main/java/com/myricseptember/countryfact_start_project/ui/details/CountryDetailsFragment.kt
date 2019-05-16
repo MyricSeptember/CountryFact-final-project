@@ -2,6 +2,7 @@ package com.myricseptember.countryfact.ui.details
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.support.v7.app.AppCompatActivity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -21,7 +22,7 @@ class CountryDetailsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val countryId = activity?.intent?.getIntExtra(getString(R.string.country_id),0)
+        val countryId = arguments?.getInt(getString(R.string.country_id))
         countryId?.let {
             val countryDetails = (activity?.application as CountryFactApp)
                 .getCountryRepository()
@@ -38,5 +39,6 @@ class CountryDetailsFragment : Fragment() {
         majorLangTextView.text = country?.major_language
         majorReligionTextView.text = country?.major_religion
         monetaryUnitTextView.text = country?.monetary_unit
+        (activity as AppCompatActivity).supportActionBar?.title = country?.name
     }
 }
