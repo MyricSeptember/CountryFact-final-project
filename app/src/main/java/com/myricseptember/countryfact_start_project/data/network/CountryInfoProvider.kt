@@ -102,7 +102,7 @@ class CountryInfoProvider {
                     "Sesotho, English",
                     "Christianity",
                     "loti ; South African rand",
-                    7
+                    8
                 )
             )
             return countries
